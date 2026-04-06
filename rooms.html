@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooms & Suites — The Aurelian Luxury Hotel</title>
+  <meta name="description" content="Explore our exquisite rooms and suites at The Aurelian. From ocean-view deluxe rooms to presidential suites — each designed for the most discerning travellers." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body class="page-enter">
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-name">The Aurelian</span>
+        <span class="logo-tagline">Luxury Collection</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html" class="active">Rooms</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="booking.html" class="btn btn-primary btn-sm nav-cta">Book Now</a>
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="offers.html">Offers</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html" class="btn btn-primary">Book Now</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg">
+      <img src="assets/room-suite.png" alt="Luxurious hotel suite" />
+    </div>
+    <div class="page-hero-content">
+      <span class="overline">Our Accommodations</span>
+      <h1 class="h1">Rooms &amp; Suites</h1>
+    </div>
+  </div>
+
+  <!-- ROOMS SECTION -->
+  <section style="background:var(--cream);padding:80px 0;">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px;justify-content:center;" id="room-filters">
+        <button class="btn btn-primary btn-sm filter-btn active" data-filter="all">All Rooms</button>
+        <button class="btn btn-outline btn-sm filter-btn" data-filter="ocean">Ocean View</button>
+        <button class="btn btn-outline btn-sm filter-btn" data-filter="suite">Suites</button>
+        <button class="btn btn-outline btn-sm filter-btn" data-filter="family">Family</button>
+      </div>
+
+      <!-- Rooms Grid — Full Detail Cards -->
+      <div style="display:flex;flex-direction:column;gap:48px;" id="rooms-list">
+
+        <!-- Room 1: Deluxe Ocean View -->
+        <article class="reveal" data-category="ocean" style="background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);display:grid;grid-template-columns:1fr 1fr;min-height:420px;">
+          <div style="overflow:hidden;position:relative;">
+            <img src="assets/room-deluxe.png" alt="Deluxe Ocean View Room" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;" loading="lazy"
+              onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+            <div style="position:absolute;top:20px;left:20px;background:var(--gold);color:var(--navy);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;border-radius:100px;">Most Popular</div>
+          </div>
+          <div style="padding:44px 40px;display:flex;flex-direction:column;justify-content:space-between;">
+            <div>
+              <span class="overline">Deluxe Category</span>
+              <h2 class="h3" style="font-family:var(--font-serif);color:var(--navy);margin:8px 0 16px;">Deluxe Ocean View Room</h2>
+              <p class="lead" style="font-size:0.9rem;margin-bottom:24px;">Wake to breathtaking panoramic sea views from your private balcony. This beautifully appointed sanctuary features a king-size bed with 400-thread Egyptian cotton linens, an Italian Calacatta marble bathroom with a rain shower and soaking tub, and a Nespresso machine.</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;">
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg></div><div class="text"><strong>King Bed</strong><span>400-thread cotton</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg></div><div class="text"><strong>42 m²</strong><span>Including balcony</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22a4 4 0 0 0 4-4 4 4 0 0 1 4-4 4 4 0 0 0 4-4 4 4 0 0 1 4-4"></path></svg></div><div class="text"><strong>Ocean View</strong><span>Private terrace</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg></div><div class="text"><strong>Marble Bath</strong><span>Rain shower & tub</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg></div><div class="text"><strong>1Gbps WiFi</strong><span>Complimentary</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg></div><div class="text"><strong>Breakfast</strong><span>Included (direct)</span></div></div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding-top:20px;border-top:1px solid var(--grey-200);">
+              <div>
+                <div style="font-family:var(--font-serif);font-size:2rem;font-weight:600;color:var(--navy);line-height:1;">$340</div>
+                <div style="font-size:0.75rem;color:var(--grey-400);">per night, incl. breakfast</div>
+              </div>
+              <a href="booking.html?room=deluxe" class="btn btn-primary" id="book-deluxe-rooms">Book This Room</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 2: Presidential Suite -->
+        <article class="reveal" data-category="suite" style="background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);display:grid;grid-template-columns:1fr 1fr;min-height:420px;">
+          <div style="padding:44px 40px;display:flex;flex-direction:column;justify-content:space-between;order:1;">
+            <div>
+              <span class="overline">Presidential Suite</span>
+              <h2 class="h3" style="font-family:var(--font-serif);color:var(--navy);margin:8px 0 16px;">Presidential Suite</h2>
+              <p class="lead" style="font-size:0.9rem;margin-bottom:24px;">The pinnacle of luxury at The Aurelian. This sprawling 95m² suite features a grand separate living room, a private jacuzzi on the terrace, a grand piano, butler service, and breathtaking panoramic city views through floor-to-ceiling windows.</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;">
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg></div><div class="text"><strong>King Bed</strong><span>Bespoke mattress</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg></div><div class="text"><strong>95 m²</strong><span>+ private terrace</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg></div><div class="text"><strong>Private Jacuzzi</strong><span>On terrace</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17H2c0-5 3.5-9 8-10h4c4.5 1 8 5 8 10Z"></path><path d="M12 7V3"></path><path d="M10 22h4"></path></svg></div><div class="text"><strong>Butler Service</strong><span>24/7 dedicated</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg></div><div class="text"><strong>Welcome Gift</strong><span>Champagne & fruit</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="22" x2="9" y2="22.01"></line><line x1="15" y1="22" x2="15" y2="22.01"></line><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg></div><div class="text"><strong>City/Sea Views</strong><span>Panoramic, all sides</span></div></div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding-top:20px;border-top:1px solid var(--grey-200);">
+              <div>
+                <div style="font-family:var(--font-serif);font-size:2rem;font-weight:600;color:var(--navy);line-height:1;">$780</div>
+                <div style="font-size:0.75rem;color:var(--grey-400);">per night, all inclusive</div>
+              </div>
+              <a href="booking.html?room=suite" class="btn btn-primary" id="book-suite-rooms">Book This Suite</a>
+            </div>
+          </div>
+          <div style="overflow:hidden;position:relative;order:2;">
+            <img src="assets/room-suite.png" alt="Presidential Suite" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;" loading="lazy"
+              onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+            <div style="position:absolute;top:20px;left:20px;background:var(--navy);color:var(--gold);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;border-radius:100px;">Luxury Suite</div>
+          </div>
+        </article>
+
+        <!-- Room 3: Family Garden Suite -->
+        <article class="reveal" data-category="family" style="background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);display:grid;grid-template-columns:1fr 1fr;min-height:420px;">
+          <div style="overflow:hidden;position:relative;">
+            <img src="assets/room-family.png" alt="Family Garden Suite" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;" loading="lazy"
+              onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+            <div style="position:absolute;top:20px;left:20px;background:var(--gold);color:var(--navy);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;border-radius:100px;">Family Favourite</div>
+          </div>
+          <div style="padding:44px 40px;display:flex;flex-direction:column;justify-content:space-between;">
+            <div>
+              <span class="overline">Family Suite</span>
+              <h2 class="h3" style="font-family:var(--font-serif);color:var(--navy);margin:8px 0 16px;">Family Garden Suite</h2>
+              <p class="lead" style="font-size:0.9rem;margin-bottom:24px;">Designed with families in mind, this generous 68m² suite offers two elegant queen beds, a dedicated children's play area, and a private terrace opening directly to our lush tropical gardens. Accommodates up to 5 guests comfortably.</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;">
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg></div><div class="text"><strong>2 Queen Beds</strong><span>Plush & cosy</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg></div><div class="text"><strong>68 m²</strong><span>+ garden terrace</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><div class="text"><strong>Kids Zone</strong><span>Toys & games area</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="22" x2="12" y2="2"></line><path d="M12 22A10 10 0 0 0 2 12a10 10 0 0 1 10 10z"></path><path d="M12 22a10 10 0 0 1 10-10 10 10 0 0 0-10 10z"></path></svg></div><div class="text"><strong>Garden Access</strong><span>Private terrace</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><div class="text"><strong>Up to 5 Guests</strong><span>Extra beds available</span></div></div>
+                <div class="amenity-item"><div class="icon" style="display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg></div><div class="text"><strong>Kitchenette</strong><span>For light cooking</span></div></div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding-top:20px;border-top:1px solid var(--grey-200);">
+              <div>
+                <div style="font-family:var(--font-serif);font-size:2rem;font-weight:600;color:var(--navy);line-height:1;">$520</div>
+                <div style="font-size:0.75rem;color:var(--grey-400);">per night, up to 4 guests</div>
+              </div>
+              <a href="booking.html?room=family" class="btn btn-primary" id="book-family-rooms">Book This Suite</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-content">
+        <span class="overline">Best Rate, Direct with Us</span>
+        <h2 class="h2">Ready to Reserve Your Room?</h2>
+        <p class="lead">Book directly and enjoy breakfast included, free cancellation, and priority upgrade — guaranteed.</p>
+        <div class="cta-actions">
+          <a href="booking.html" class="btn btn-primary btn-lg" id="rooms-cta-book">Check Availability</a>
+          <a href="contact.html" class="btn btn-outline-white btn-lg" id="rooms-cta-contact">Ask a Question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-name">The Aurelian</div>
+          <div class="logo-tagline">Luxury Collection</div>
+          <p>A sanctuary of refined elegance on the water's edge.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Instagram"><svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect><circle cx="12" cy="12" r="3"></circle><line x1="18" y1="9" x2="18.01" y2="9"></line></svg></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="rooms.html">Rooms & Suites</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Spa & Wellness</a></li>
+            <li><a href="#">Fine Dining</a></li>
+            <li><a href="#">Concierge</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item"><span class="icon"><svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span><span>+1 (800) 287-3542</span></div>
+          <div class="footer-contact-item"><span class="icon"><svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span><span>reservations@aurelian.com</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 The Aurelian Luxury Collection. All Rights Reserved.</span>
+        <span><a href="#">Privacy Policy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Room filter tabs
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const roomCards  = document.querySelectorAll('#rooms-list article');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => { b.classList.remove('active'); b.classList.add('btn-outline'); b.classList.remove('btn-primary'); });
+        btn.classList.add('active', 'btn-primary'); btn.classList.remove('btn-outline');
+        const filter = btn.dataset.filter;
+        roomCards.forEach(card => {
+          card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
